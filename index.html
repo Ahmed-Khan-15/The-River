@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Lavish Stay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* color: rgb(243, 239, 233); */
+            /* background-color: black; */
+            font-family: poppins, sans-serif;
+        }
+
+        nav {
+            /* border: 1px solid; */
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 18vh;
+        }
+
+        .nav-lis {
+            list-style: none;
+            margin: 0 15px;
+            display: inline-block;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+        }
+        a:hover {
+            color: #FFA37B;
+            transition: color 0.3s ease;
+        }
+        .river {
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            outline: 2px solid white;
+            border: 2px solid black;
+            background-color: transparent;
+            cursor: pointer;
+            color: white;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .book,
+        .number {
+            color: white;
+            padding: 18px 30px;
+            font-size: 16px;
+            /* border: 1px solid white; */
+            border: none;
+            font-size: 16px;
+            background-color: #FFA37B;
+            cursor: pointer;
+        }
+
+        .number {
+            font-family: zilla slab, serif;
+        }
+
+        i {
+            margin-right: 8px;
+        }
+
+        header {
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 1, 19, 0.45)),
+                url('lavish_image.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            position: relative;
+        }
+
+        .lavish-stay {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .lavish-heading {
+            color: white;
+            font-size: 90px;
+            margin-bottom: 40px;
+            text-shadow: 0 0 15px black;
+            font-family: poppins, sans-serif;
+        }
+
+        .lavish-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            gap: 20px;
+        }
+
+        .lavish-buttons .heading-button {
+            width: auto;
+            padding: 11px 50px 11px 12px;
+            font-size: 16px;
+            border: 2px solid white;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.20);
+            backdrop-filter: blur(1px);
+            color: white;
+            font-family: poppins, sans-serif;
+        }
+        .lavish-buttons .heading-button:hover {
+             background: rgba(255, 255, 255, 0.75);
+             color: #2b2b2b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+        }
+        .lavish-buttons .book {
+            white-space: nowrap;
+            padding: 15px 40px;
+            font-size: 16px;
+            border: none;
+            background-color: #FFA37B;
+            cursor: pointer;
+        }
+
+        .lavish-buttons .check-in-button,
+        .lavish-buttons .check-out-button {
+            /* min-width: 250px; */
+            /* padding: 15px 100px 15px 5px; */
+            width: 250px;
+            padding-left: 10px;
+        }
+
+        .information_container {
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            margin: 60px 0;
+        }
+        .info {
+            width: 300px;
+            text-align: center;
+            color: black;
+            font-family: poppins, sans-serif;
+        }
+        .info-heading {
+            color: rgb(70, 68, 68);
+            font-size: 35px;
+            font-weight: 500;
+            margin: 15px 0;
+        }
+        .info-p {
+            color: grey;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .info-icons {
+            font-size: 50px;
+            color: grey;
+        }
+        .info-icons:hover {
+            color: #FFA37B;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <nav>
+                <button class="river">The River</button>
+                <ul>
+                    <li class="nav-lis"><a href="#">Home</a></li>
+                    <li class="nav-lis"><a href="#">About us</a></li>
+                    <li class="nav-lis"><a href="#">Rooms</a></li>
+                    <li class="nav-lis"><a href="#">Blog</a></li>
+                    <li class="nav-lis"><a href="#">Contact</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <button class="book">Book Online</button>
+                    <button class="number"><i class="fa-solid fa-phone"
+                            style="color: #ffffff;"></i>0182-12345678</button>
+                </div>
+            </nav>
+        </div>
+        <div class="lavish-stay">
+            <h1 class="lavish-heading">A Lavish Stay</h1>
+            <div class="lavish-buttons">
+                <button class="heading-button check-in-button">Check in</button>
+                <button class="heading-button check-out-button">Check out</button>
+                <button class="heading-button children-button">Children</button>
+                <button class="heading-button room-button">Room</button>
+                <button class="book ">Book Now</button>
+            </div>
+        </div>
+    </header>
+    <div class="information_container">
+        <div class="info">
+            <i class="fa-solid fa-hotel info-icons"></i>
+            <h2 class="info-heading">Fabulous Resort</h2>
+            <p class="info-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quasi dolorem veritatis est
+                voluptatem excepturi error quas! Eius perspiciatis, a</p>
+        </div>
+        <div class="info">
+            <i class="fa-solid fa-water-ladder info-icons"></i>
+            <h2 class="info-heading">Infinity Pool</h2>
+            <p class="info-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quasi dolorem veritatis est
+                voluptatem excepturi error quas! Eius perspiciatis, a</p>
+        </div>
+        <div class="info">
+            <i class="fa-solid fa-umbrella-beach info-icons"></i>
+            <h2 class="info-heading">Luxury Rooms</h2>
+            <p class="info-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quasi dolorem veritatis est
+                voluptatem excepturi error quas! Eius perspiciatis, a</p>
+        </div>
+    </div>
+</body>
+
+</html>
