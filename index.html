@@ -11,7 +11,10 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -36,15 +39,17 @@
             display: inline-block;
         }
 
-        a {
+        .nav_a {
             text-decoration: none;
             font-size: 18px;
             color: white;
         }
-        a:hover {
+
+        .nav_a:hover {
             color: #FFA37B;
             transition: color 0.3s ease;
         }
+
         .river {
             padding: 10px 20px;
             font-size: 20px;
@@ -129,12 +134,14 @@
             color: white;
             font-family: poppins, sans-serif;
         }
+
         .lavish-buttons .heading-button:hover {
-             background: rgba(255, 255, 255, 0.75);
-             color: #2b2b2b;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+            background: rgba(255, 255, 255, 0.75);
+            color: #2b2b2b;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
         }
+
         .lavish-buttons .book {
             white-space: nowrap;
             padding: 15px 40px;
@@ -159,30 +166,218 @@
             gap: 80px;
             margin: 60px 0;
         }
+
         .info {
             width: 300px;
             text-align: center;
             color: black;
             font-family: poppins, sans-serif;
         }
+
         .info-heading {
             color: rgb(70, 68, 68);
             font-size: 35px;
             font-weight: 500;
             margin: 15px 0;
         }
+
         .info-p {
             color: grey;
             font-size: 16px;
             line-height: 1.5;
         }
+
         .info-icons {
             font-size: 50px;
             color: grey;
         }
+
         .info-icons:hover {
             color: #FFA37B;
             transition: color 0.3s ease;
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .image_pi {
+            width: 25%;
+        }
+
+        .photos {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .about_container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 50px;
+            padding: 20px;
+        }
+
+        .certificates_container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .about_h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: rgb(70, 68, 68);
+            font-family: "Open Sans", sans-serif;
+            font-weight: 600;
+            font-size: 40px;
+            max-width: 20ch;
+        }
+
+        .about_p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: rgb(92, 92, 92);
+            font-family: "Open Sans", sans-serif;
+            max-width: 60ch;
+        }
+        .testimonials{
+            background-image: url("testimonials.jpg");
+            background-size: cover;  
+            background-position: center; 
+            background-repeat: no-repeat; 
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3%;
+        }
+        .tesimony {
+            height: 70%;
+            width: 25%;
+            border: 2px solid black;
+            background-color: white;
+        }
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer_content {
+            display: flex;
+            justify-content: space-around;
+            gap: 100px;
+            width: 80%;
+            margin: 40px 0;
+        }
+
+        .footer_button {
+            padding: 10px 20px;
+            font-family: "Open Sans", sans-serif;
+            font-size: 35px;
+            font-weight: bold;
+            border-radius: 2px;
+            border: 3px solid black;
+            background-color: transparent;
+            cursor: pointer;
+            color: rgb(54, 54, 54);
+        }
+
+        .footer_button:hover {
+            border-color: #FFA37B;
+            color: #FFA37B;
+            transition: all 0.3s ease;
+        }
+
+        .date {
+            margin-top: 10px;
+            font-family: zilla slab, serif;
+            font-weight: 600;
+            color: rgb(34, 34, 34);
+        }
+
+        .footer_btn_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        input[type="email"] {
+            padding: 18px 20px 18px 0px;
+            width: 100%;
+            margin-bottom: 10px;
+            border: none;
+            border-bottom: #2b2b2b 2px solid;
+        }
+
+        input[type="email"]::placeholder {
+            color: #888;
+            font-size: 15px;
+            opacity: 1;
+            /* optional, some browsers default to a lower opacity */
+        }
+
+        input[type="email"]:focus {
+            outline: none;
+            border-bottom: #f7986f 2px solid;
+        }
+
+        .footer_content3 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .subscribe {
+            padding: 18px 45px;
+            margin-top: 10px;
+            font-size: 16px;
+            border: none;
+            background-color: #FFA37B;
+            color: white;
+            cursor: pointer;
+        }
+
+        .footer_information {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: rgb(53, 51, 51);
+            font-family: "Open Sans", sans-serif;
+            font-weight: 600;
+        }
+
+        .footer_para {
+            font-size: 16px;
+            color: rgb(61, 60, 60);
+            font-family: "Open Sans", sans-serif;
+            margin-bottom: 8px;
+        }
+        .footer_content4 {
+            display: flex;
+            gap: 10px;
+        }
+        .footer_certificate_image {
+            width: 80%;
+            height: auto;
+        }
+        .made_para {
+            font-size: 14px;
+            color: rgb(36, 35, 35);
+            margin-bottom: 20px;
+            font-family: "Open Sans", sans-serif;
+        }
+        .made_a {
+            text-decoration: none;
+            color: #fd8b5a;
+        }
+        .made_a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -194,11 +389,11 @@
             <nav>
                 <button class="river">The River</button>
                 <ul>
-                    <li class="nav-lis"><a href="#">Home</a></li>
-                    <li class="nav-lis"><a href="#">About us</a></li>
-                    <li class="nav-lis"><a href="#">Rooms</a></li>
-                    <li class="nav-lis"><a href="#">Blog</a></li>
-                    <li class="nav-lis"><a href="#">Contact</a></li>
+                    <li class="nav-lis"><a class="nav_a" href="#">Home</a></li>
+                    <li class="nav-lis"><a class="nav_a" href="#">About us</a></li>
+                    <li class="nav-lis"><a class="nav_a" href="#">Rooms</a></li>
+                    <li class="nav-lis"><a class="nav_a" href="#">Blog</a></li>
+                    <li class="nav-lis"><a class="nav_a" href="#">Contact</a></li>
                 </ul>
                 <div class="nav-buttons">
                     <button class="book">Book Online</button>
@@ -238,6 +433,67 @@
                 voluptatem excepturi error quas! Eius perspiciatis, a</p>
         </div>
     </div>
+    <div class="images">
+        <div class="image_pi"><img src="gallery_1.jpg.webp" alt="Hotel Photo" class="photos"></div>
+        <div class="image_pi"><img src="gallery_2.jpg.webp" alt="Hotel Photo" class="photos"></div>
+        <div class="image_pi"><img src="gallery_3.jpg.webp" alt="Hotel Photo" class="photos"></div>
+        <div class="image_pi"><img src="gallery_4.jpg.webp" alt="Hotel Photo" class="photos"></div>
+    </div>
+    <div class="about_container">
+        <div class="about">
+            <h2 class="about_h2">The River / 10 years of excellence</h2>
+            <p class="about_p">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                Suspendisse nec faucibus velit. Quisque eleifend orci ipsum, a bibendum lacus suscipit sit. Vestibulum
+                ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse nec faucibus
+                velit. Quisque eleifend orci ipsum, a bibendum lacus suscipit sit. Vestibulum ante ipsum primis in
+                faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse nec faucibus velit.</p>
+        </div>
+        <div class="certificates_container">
+            <div class="certificates"><img src="about_1.png" alt="" class="certificate_image"></div>
+            <div class="certificates"><img src="about_2.png" alt="" class="certificate_image"></div>
+            <div class="certificates"><img src="about_3.png" alt="" class="certificate_image"></div>
+        </div>
+    </div>
+
+    <div class="testimonials">
+        <div class="tesimony tesimony1"></div>
+        <div class="tesimony tesimony2"></div>
+        <div class="tesimony tesimony3"></div>
+    </div>
+
+    <footer>
+        <div class="footer_btn_container">
+            <div class="footer_button">The River</div>
+            <div class="date">Since 1945</div>
+        </div>
+        <div class="footer_content">
+            <div class="footer_content1">
+                <h4 class="footer_information">Our Address</h4>
+                <p class="footer_para footer_para1">Beach Str. 345</p>
+                <p class="footer_para footer_para2">67559 Miami</p>
+                <p class="footer_para footer_para3">USA</p>
+            </div>
+            <div class="footer_content2">
+                <h4 class="footer_information">Reservations</h4>
+                <p class="footer_para footer_para1">Tel: 345 5667 889</p>
+                <p class="footer_para footer_para2">Fax; 6783 4567 889</p>
+                <p class="footer_para footer_para3">reservations@hotelriver.com</p>
+            </div>
+            <div class="footer_content3">
+                <h4 class="footer_information">Newsletter</h4>
+                <input type="email" placeholder="Your email address">
+                <button class="subscribe">Subscribe</button>
+            </div>
+            <div class="footer_content4">
+                <div class="certificates"><img class="footer_certificate_image" src="about_1.png" alt="" class="certificate_image"></div>
+                <div class="certificates"><img class="footer_certificate_image" src="about_2.png" alt="" class="certificate_image"></div>
+            </div>
+        </div>
+        <div class="made_div">
+            <p class="made_para">Copyright ©2025 All rights reserved | This template is made by <a class="made_a"
+                 target="_blank"   href="https://github.com/Ahmed-Khan-15">Ahmed Khan</a></p>
+        </div>
+    </footer>
 </body>
 
 </html>
