@@ -15,120 +15,187 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="./src/output.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="navbar">
-            <nav>
-                <button class="river">The River</button>
-                <ul>
-                    <li class="nav-lis"><a class="nav_a" href="#">Home</a></li>
-                    <li class="nav-lis"><a class="nav_a" href="#">About us</a></li>
-                    <li class="nav-lis"><a class="nav_a" href="#">Rooms</a></li>
-                    <li class="nav-lis"><a class="nav_a" href="#">Blog</a></li>
-                    <li class="nav-lis"><a class="nav_a" href="#">Contact</a></li>
-                </ul>
-                <div class="nav-buttons">
-                    <button class="book">Book Online</button>
-                    <button class="number"><i class="fa-solid fa-phone"
-                            style="color: #ffffff;"></i>0182-12345678</button>
-                </div>
-            </nav>
-        </div>
-        <div class="lavish-stay">
-            <h1 class="lavish-heading">A Lavish Stay</h1>
-            <div class="lavish-buttons">
-                <button class="heading-button check-in-button">Check in</button>
-                <button class="heading-button check-out-button">Check out</button>
-                <button class="heading-button children-button">Children</button>
-                <button class="heading-button room-button">Room</button>
-                <button class="book ">Book Now</button>
-            </div>
-        </div>
-    </header>
-    <div class="information_container">
-        <div class="info">
-            <i class="fa-solid fa-hotel info-icons"></i>
-            <h2 class="info-heading">Fabulous Resort</h2>
-            <p class="info-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quasi dolorem veritatis est
-                voluptatem excepturi error quas! Eius perspiciatis, a</p>
-        </div>
-        <div class="info">
-            <i class="fa-solid fa-water-ladder info-icons"></i>
-            <h2 class="info-heading">Infinity Pool</h2>
-            <p class="info-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quasi dolorem veritatis est
-                voluptatem excepturi error quas! Eius perspiciatis, a</p>
-        </div>
-        <div class="info">
-            <i class="fa-solid fa-umbrella-beach info-icons"></i>
-            <h2 class="info-heading">Luxury Rooms</h2>
-            <p class="info-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quasi dolorem veritatis est
-                voluptatem excepturi error quas! Eius perspiciatis, a</p>
-        </div>
-    </div>
-    <div class="images">
-        <div class="image_pi"><img src="gallery_1.jpg.webp" alt="Hotel Photo" class="photos"></div>
-        <div class="image_pi"><img src="gallery_2.jpg.webp" alt="Hotel Photo" class="photos"></div>
-        <div class="image_pi"><img src="gallery_3.jpg.webp" alt="Hotel Photo" class="photos"></div>
-        <div class="image_pi"><img src="gallery_4.jpg.webp" alt="Hotel Photo" class="photos"></div>
-    </div>
-    <div class="about_container">
-        <div class="about">
-            <h2 class="about_h2">The River / 10 years of excellence</h2>
-            <p class="about_p">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                Suspendisse nec faucibus velit. Quisque eleifend orci ipsum, a bibendum lacus suscipit sit. Vestibulum
-                ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse nec faucibus
-                velit. Quisque eleifend orci ipsum, a bibendum lacus suscipit sit. Vestibulum ante ipsum primis in
-                faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse nec faucibus velit.</p>
-        </div>
-        <div class="certificates_container">
-            <div class="certificates"><img src="about_1.png" alt="" class="certificate_image"></div>
-            <div class="certificates"><img src="about_2.png" alt="" class="certificate_image"></div>
-            <div class="certificates"><img src="about_3.png" alt="" class="certificate_image"></div>
-        </div>
-    </div>
+    <header class="min-h-screen relative bg-gray-800">
 
-    <div class="testimonials">
-        <div class="tesimony tesimony1"></div>
-        <div class="tesimony tesimony2"></div>
-        <div class="tesimony tesimony3"></div>
-    </div>
+        <nav class="flex items-center justify-between px-6 py-5">
+            <h1>
+                <a href="#" class="text-3xl font-semibold text-white">
+                    The River
+                </a>
+            </h1>
+
+            <button class="text-2xl text-white">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="hidden">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="hidden">
+                <button>Book Online</button>
+                <button>0182-12345678</button>
+            </div>
+        </nav>
+
+
+
+        <!-- ********* HERO SECTION  ********* -->
+
+
+
+        <section class="hero">
+            <h2 class="lavish-heading text-white">A Lavish Stay</h2>
+            <div class="lavish-buttons">
+                <button class="heading-button check-in-button text-white">Check in</button>
+                <button class="heading-button check-out-button text-white">Check out</button>
+                <button class="heading-button children-button text-white">Children</button>
+                <button class="heading-button room-button text-white">Room</button>
+                <button class="book text-white">Book Now</button>
+            </div>
+        </section>
+    </header>
+    <main>
+
+
+
+        <!-- ********* FEATURES SECTION  ********* -->
+
+
+
+        <section class="information_container">
+            <article class="info">
+                <i class="fa-solid fa-hotel info-icons"></i>
+                <h2 class="info-heading">Fabulous Resort</h2>
+                <p class="info-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quasi dolorem veritatis
+                    est
+                    voluptatem excepturi error quas! Eius perspiciatis, a</p>
+            </article>
+            <article class="info">
+                <i class="fa-solid fa-water-ladder info-icons"></i>
+                <h2 class="info-heading">Infinity Pool</h2>
+                <p class="info-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quasi dolorem veritatis
+                    est
+                    voluptatem excepturi error quas! Eius perspiciatis, a</p>
+            </article>
+            <article class="info">
+                <i class="fa-solid fa-umbrella-beach info-icons"></i>
+                <h2 class="info-heading">Luxury Rooms</h2>
+                <p class="info-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quasi dolorem veritatis
+                    est
+                    voluptatem excepturi error quas! Eius perspiciatis, a</p>
+            </article>
+
+        </section>
+
+
+
+        <!-- ********* Gallery SECTION  ********* -->
+
+
+
+        <section class="gallery">
+            <img src="gallery_1.jpg.webp" alt="Luxury hotel exterior" class="photos">
+            <img src="gallery_2.jpg.webp" alt="Infinity pool" class="photos">
+            <img src="gallery_3.jpg.webp" alt="Beachfront resort" class="photos">
+            <img src="gallery_4.jpg.webp" alt="Hotel lobby">
+        </section>
+
+
+
+        <!-- ********* ABOUT SECTION  ********* -->
+
+
+
+        <section class="about-section">
+            <div>
+                <h2 class="about_h2">The River / 10 years of excellence</h2>
+                <p class="about_p">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                    Curae;
+                    Suspendisse nec faucibus velit. Quisque eleifend orci ipsum, a bibendum lacus suscipit sit.
+                    Vestibulum
+                    ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse nec
+                    faucibus
+                    velit. Quisque eleifend orci ipsum, a bibendum lacus suscipit sit. Vestibulum ante ipsum primis in
+                    faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse nec faucibus velit.</p>
+            </div>
+            <div class="certificates_container">
+                <img src="about_1.png" alt="" class="certificate_image">
+                <img src="about_2.png" alt="" class="certificate_image">
+                <img src="about_3.png" alt="" class="certificate_image">
+            </div>
+        </section>
+
+
+
+        <!-- ********* TESTIMONIALS SECTION  ********* -->
+
+
+
+        <section class="testimonials">
+            <article class="testimonials-card tesimony1"></article>
+            <article class="testimonials-card tesimony2"></article>
+            <article class="testimonials-card tesimony3"></article>
+        </section>
+    </main>
+
+
+
+    <!-- ********* FOOTER SECTION  ********* -->
+
+
 
     <footer>
+
         <div class="footer_btn_container">
             <div class="footer_button">The River</div>
             <div class="date">Since 1945</div>
         </div>
-        <div class="footer_content">
-            <div class="footer_content1">
+
+
+        <section class="footer_content">
+
+            <section class="footer_content1">
                 <h4 class="footer_information">Our Address</h4>
                 <p class="footer_para footer_para1">Beach Str. 345</p>
                 <p class="footer_para footer_para2">67559 Miami</p>
                 <p class="footer_para footer_para3">USA</p>
-            </div>
-            <div class="footer_content2">
+            </section>
+
+            <section class="footer_content2">
                 <h4 class="footer_information">Reservations</h4>
                 <p class="footer_para footer_para1">Tel: 345 5667 889</p>
                 <p class="footer_para footer_para2">Fax; 6783 4567 889</p>
                 <p class="footer_para footer_para3">reservations@hotelriver.com</p>
-            </div>
-            <div class="footer_content3">
+            </section>
+
+            <section class="footer_content3">
                 <h4 class="footer_information">Newsletter</h4>
                 <input type="email" placeholder="Your email address">
                 <button class="subscribe">Subscribe</button>
-            </div>
-            <div class="footer_content4">
-                <div class="certificates"><img class="footer_certificate_image" src="about_1.png" alt="" class="certificate_image"></div>
-                <div class="certificates"><img class="footer_certificate_image" src="about_2.png" alt="" class="certificate_image"></div>
-            </div>
-        </div>
+            </section>
+
+            <section class="footer_content4">
+                <div class="certificates">
+                    <img class="footer_certificate_image" src="about_1.png" alt="" class="certificate_image">
+                    <img class="footer_certificate_image" src="about_2.png" alt="" class="certificate_image">
+                </div>
+            </section>
+
+        </section>
         <div class="made_div">
             <p class="made_para">Copyright ©2025 All rights reserved | This template is made by <a class="made_a"
-                 target="_blank"   href="https://github.com/Ahmed-Khan-15">Ahmed Khan</a></p>
+                    target="_blank" href="https://github.com/Ahmed-Khan-15">Ahmed Khan</a></p>
         </div>
     </footer>
 </body>
