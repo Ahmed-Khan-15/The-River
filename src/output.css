@@ -174,8 +174,14 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
   .relative {
     position: relative;
+  }
+  .inset-0 {
+    inset: 0;
   }
   .flex {
     display: flex;
@@ -213,6 +219,15 @@
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
+  }
+  .bg-\[url\(\'\/lavish_image\.jpeg\'\)\] {
+    background-image: url('/lavish_image.jpeg');
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
